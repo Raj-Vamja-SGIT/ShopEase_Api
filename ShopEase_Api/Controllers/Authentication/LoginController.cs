@@ -8,6 +8,7 @@ using ShopEase.Model.Settings;
 using ShopEase.Model.ViewModels.Token;
 using ShopEase.Service.Services.JWTAuthentication;
 using ShopEase.Service.Services.Account;
+using Microsoft.AspNetCore.Identity;
 
 namespace ShopEase_Api.Controllers.Authentication
 {
@@ -41,13 +42,13 @@ namespace ShopEase_Api.Controllers.Authentication
         /// </summary>
         /// <param name="model">object with emailid and password details in request</param>
         /// <returns></returns>
-        [HttpPost]
+        [HttpPost("Login")]
         public async Task<ApiPostResponse<LoginBaseReponseModel>> LoginUser([FromBody] LoginRequestModel model)
         {
             ApiPostResponse<LoginBaseReponseModel> response = new ApiPostResponse<LoginBaseReponseModel>();
             LoginBaseReponseModel loginBaseReponseModel = new LoginBaseReponseModel();
 
-            //model.Password = EncryptionDecryption.GetEncrypt(model.Password);
+            model.Password = EncryptionDecryption.GetEncrypt(model.Password);
             LoginResponseModel result = await _accountService.LoginUser(model);
 
             if (result != null && result.UserId > 0)
@@ -85,5 +86,41 @@ namespace ShopEase_Api.Controllers.Authentication
 
         #endregion
 
+        #region Post
+
+        [HttpPost("Register")]
+        public async Task<BaseApiResponse> RegisterUser([FromBody] RegisterUserRequestModel model)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return new ApiPostResponse<BaseApiResponse>
+                    {
+                        Success = false,
+                        Message = "Invalid model state",
+                    };
+                }
+
+                var result = await _accountService.RegisterUser(model);
+                return result;
+                
+            }
+            catch (Exception ex)
+            {
+                // Log exception details here if necessary
+                return new ApiPostResponse<BaseApiResponse>
+                {
+                    Success = false,
+                    Message = "An error occurred while processing your request.",
+                };
+            }
+        }
+
+
     }
+    #endregion
+
+
+
 }

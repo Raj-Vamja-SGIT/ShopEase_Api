@@ -1,4 +1,5 @@
-﻿using ShopEase.Model.ViewModels.Login;
+﻿using ShopEase.Common.Helpers;
+using ShopEase.Model.ViewModels.Login;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,7 @@ namespace ShopEase.Data.DBRepository.Account
         #region Post
         Task<LoginResponseModel> LoginUser(LoginRequestModel model); 
         #endregion
+
+        Task<BaseApiResponse> RegisterUser(RegisterUserRequestModel model);
     }
 }
