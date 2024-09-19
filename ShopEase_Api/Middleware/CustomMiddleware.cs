@@ -69,7 +69,7 @@ namespace ShopEase_Api.Middleware
             {
                 // Add error logs in folder
                 AddExceptionLogsToLoggerFile(context, ex);
-            }
+            }      
         }
 
         /// <summary>

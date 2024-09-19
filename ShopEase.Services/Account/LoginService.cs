@@ -1,4 +1,5 @@
 ﻿
+using ShopEase.Common.Helpers;
 using ShopEase.Data.DBRepository.Account;
 using ShopEase.Model.ViewModels.Login;
 
@@ -23,5 +24,10 @@ namespace ShopEase.Service.Services.Account
             return await _repository.LoginUser(model);
         } 
         #endregion
+
+        public async Task<BaseApiResponse> RegisterUser(RegisterUserRequestModel model)
+        {
+            return await _repository.RegisterUser(model);
+        }
     }
 }

@@ -8,9 +8,6 @@ namespace ShopEase.Common.Helpers
 {
     public class BaseApiResponse
     {
-        public BaseApiResponse()
-        {
-        }
 
         public bool Success { get; set; }
         public string Message { get; set; }
