@@ -66,7 +66,9 @@ namespace ShopEase_Api.Controllers.Authentication
 
                 UserProfileModel UserProfile = new UserProfileModel();
                 UserProfile.UserId = result.UserId;
+                UserProfile.UserName = result.UserName;
                 UserProfile.EmailId = result.UserEmail;
+                UserProfile.RoleId = result.RoleId;
 
                 loginBaseReponseModel.AccessToken = AccessToken;
                 loginBaseReponseModel.UserProfile = UserProfile;
