@@ -1,12 +1,297 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase_Api\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D8626C93-49FB-45AD-9346-F2325566A7D8}|..\\ShopEase.Data\\ShopEase.Data.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease.data\\dbrepository\\login\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F46C5A94-0115-4491-A915-B8583E6F725F}|ShopEase_Api.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease_api\\emailtemplate\\createnewadminuser.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F46C5A94-0115-4491-A915-B8583E6F725F}|ShopEase_Api.csproj|solutionrelative:emailtemplate\\createnewadminuser.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F46C5A94-0115-4491-A915-B8583E6F725F}|ShopEase_Api.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease_api\\controllers\\authentication\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F46C5A94-0115-4491-A915-B8583E6F725F}|ShopEase_Api.csproj|solutionrelative:controllers\\authentication\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F46C5A94-0115-4491-A915-B8583E6F725F}|ShopEase_Api.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F46C5A94-0115-4491-A915-B8583E6F725F}|ShopEase_Api.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765FFBC2-A084-44A5-A010-D9941FF2A552}|..\\ShopEase.Services\\ShopEase.Services.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease.services\\account\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9554A6DE-9A57-4B86-A55D-B3DCEBD0CE43}|..\\ShopEase.Common\\ShopEase.Common.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease.common\\emailnotification\\emailnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9554A6DE-9A57-4B86-A55D-B3DCEBD0CE43}|..\\ShopEase.Common\\ShopEase.Common.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease.common\\shopease.common.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8626C93-49FB-45AD-9346-F2325566A7D8}|..\\ShopEase.Data\\ShopEase.Data.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease.data\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9554A6DE-9A57-4B86-A55D-B3DCEBD0CE43}|..\\ShopEase.Common\\ShopEase.Common.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease.common\\helpers\\encryptiondecryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F46C5A94-0115-4491-A915-B8583E6F725F}|ShopEase_Api.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease_api\\middleware\\custommiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F46C5A94-0115-4491-A915-B8583E6F725F}|ShopEase_Api.csproj|solutionrelative:middleware\\custommiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F46C5A94-0115-4491-A915-B8583E6F725F}|ShopEase_Api.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F46C5A94-0115-4491-A915-B8583E6F725F}|ShopEase_Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F46C5A94-0115-4491-A915-B8583E6F725F}|ShopEase_Api.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease_api\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F46C5A94-0115-4491-A915-B8583E6F725F}|ShopEase_Api.csproj|solutionrelative:registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765FFBC2-A084-44A5-A010-D9941FF2A552}|..\\ShopEase.Services\\ShopEase.Services.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease.services\\serviceregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9554A6DE-9A57-4B86-A55D-B3DCEBD0CE43}|..\\ShopEase.Common\\ShopEase.Common.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease.common\\helpers\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765FFBC2-A084-44A5-A010-D9941FF2A552}|..\\ShopEase.Services\\ShopEase.Services.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease.services\\account\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8626C93-49FB-45AD-9346-F2325566A7D8}|..\\ShopEase.Data\\ShopEase.Data.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease.data\\dbrepository\\login\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEE0E8D-4DAB-4FE1-9442-24B27883760C}|..\\ShopEase.Model\\ShopEase.Model.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease.model\\viewmodels\\user\\usersmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEE0E8D-4DAB-4FE1-9442-24B27883760C}|..\\ShopEase.Model\\ShopEase.Model.csproj|c:\\jaimin\\shopease\\shopeaseapi\\shopease.model\\viewmodels\\user\\usermastermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateNewAdminUser.html",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase_Api\\EmailTemplate\\CreateNewAdminUser.html",
+              "RelativeDocumentMoniker": "EmailTemplate\\CreateNewAdminUser.html",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase_Api\\EmailTemplate\\CreateNewAdminUser.html",
+              "RelativeToolTip": "EmailTemplate\\CreateNewAdminUser.html",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAnwJ8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-20T09:59:15.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ShopEase.Common.csproj",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Common\\ShopEase.Common.csproj",
+              "RelativeDocumentMoniker": "..\\ShopEase.Common\\ShopEase.Common.csproj",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Common\\ShopEase.Common.csproj",
+              "RelativeToolTip": "..\\ShopEase.Common\\ShopEase.Common.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-20T09:51:57.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmailNotification.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Common\\EmailNotification\\EmailNotification.cs",
+              "RelativeDocumentMoniker": "..\\ShopEase.Common\\EmailNotification\\EmailNotification.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Common\\EmailNotification\\EmailNotification.cs",
+              "RelativeToolTip": "..\\ShopEase.Common\\EmailNotification\\EmailNotification.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwAwAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T09:14:27.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase_Api\\Controllers\\Authentication\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Authentication\\AuthController.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase_Api\\Controllers\\Authentication\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\Authentication\\AuthController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T05:31:48.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Services\\Account\\LoginService.cs",
+              "RelativeDocumentMoniker": "..\\ShopEase.Services\\Account\\LoginService.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Services\\Account\\LoginService.cs",
+              "RelativeToolTip": "..\\ShopEase.Services\\Account\\LoginService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T07:19:20.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginRepository.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Data\\DBRepository\\Login\\LoginRepository.cs",
+              "RelativeDocumentMoniker": "..\\ShopEase.Data\\DBRepository\\Login\\LoginRepository.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Data\\DBRepository\\Login\\LoginRepository.cs",
+              "RelativeToolTip": "..\\ShopEase.Data\\DBRepository\\Login\\LoginRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T05:52:05.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegisterService.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase_Api\\RegisterService.cs",
+              "RelativeDocumentMoniker": "RegisterService.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase_Api\\RegisterService.cs",
+              "RelativeToolTip": "RegisterService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T10:49:24.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ServiceRegister.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Services\\ServiceRegister.cs",
+              "RelativeDocumentMoniker": "..\\ShopEase.Services\\ServiceRegister.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Services\\ServiceRegister.cs",
+              "RelativeToolTip": "..\\ShopEase.Services\\ServiceRegister.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T10:49:29.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase_Api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase_Api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T11:35:09.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase_Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase_Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAuwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T11:35:20.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EncryptionDecryption.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Common\\Helpers\\EncryptionDecryption.cs",
+              "RelativeDocumentMoniker": "..\\ShopEase.Common\\Helpers\\EncryptionDecryption.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Common\\Helpers\\EncryptionDecryption.cs",
+              "RelativeToolTip": "..\\ShopEase.Common\\Helpers\\EncryptionDecryption.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAkwCwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T05:47:11.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Data\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "..\\ShopEase.Data\\BaseRepository.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Data\\BaseRepository.cs",
+              "RelativeToolTip": "..\\ShopEase.Data\\BaseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBgAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T05:43:49.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ILoginService.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Services\\Account\\ILoginService.cs",
+              "RelativeDocumentMoniker": "..\\ShopEase.Services\\Account\\ILoginService.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Services\\Account\\ILoginService.cs",
+              "RelativeToolTip": "..\\ShopEase.Services\\Account\\ILoginService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T07:19:23.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomMiddleware.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase_Api\\Middleware\\CustomMiddleware.cs",
+              "RelativeDocumentMoniker": "Middleware\\CustomMiddleware.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase_Api\\Middleware\\CustomMiddleware.cs",
+              "RelativeToolTip": "Middleware\\CustomMiddleware.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAgwEQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T05:57:36.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Common\\Helpers\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "..\\ShopEase.Common\\Helpers\\ApiResponse.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Common\\Helpers\\ApiResponse.cs",
+              "RelativeToolTip": "..\\ShopEase.Common\\Helpers\\ApiResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T09:17:20.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserMasterModel.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Model\\ViewModels\\User\\UserMasterModel.cs",
+              "RelativeDocumentMoniker": "..\\ShopEase.Model\\ViewModels\\User\\UserMasterModel.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Model\\ViewModels\\User\\UserMasterModel.cs",
+              "RelativeToolTip": "..\\ShopEase.Model\\ViewModels\\User\\UserMasterModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T06:58:04.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UsersModel.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Model\\ViewModels\\User\\UsersModel.cs",
+              "RelativeDocumentMoniker": "..\\ShopEase.Model\\ViewModels\\User\\UsersModel.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Model\\ViewModels\\User\\UsersModel.cs",
+              "RelativeToolTip": "..\\ShopEase.Model\\ViewModels\\User\\UsersModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T06:58:05.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ILoginRepository.cs",
+              "DocumentMoniker": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Data\\DBRepository\\Login\\ILoginRepository.cs",
+              "RelativeDocumentMoniker": "..\\ShopEase.Data\\DBRepository\\Login\\ILoginRepository.cs",
+              "ToolTip": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Data\\DBRepository\\Login\\ILoginRepository.cs",
+              "RelativeToolTip": "..\\ShopEase.Data\\DBRepository\\Login\\ILoginRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T06:57:38.375Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

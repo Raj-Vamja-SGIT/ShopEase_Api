@@ -6,6 +6,7 @@ using System.Data;
 using Dapper;
 using ShopEase.Common.Helpers;
 using System.Reflection;
+using ShopEase.Common.EmailNotification;
 
 namespace ShopEase.Data.DBRepository.Account
 {
@@ -46,6 +47,42 @@ namespace ShopEase.Data.DBRepository.Account
                 {
                     response.Success = true;
                     response.Message = "User registered successfully";
+
+                    // Send welcome email after successful registration
+                    var emailSetting = new EmailNotification.EmailSetting
+                    {
+                        FromEmail = "jaymin.m@shaligraminfotech.com",   // Replace with your sender email
+                        FromName = "ShopEase",                 // Replace with the sender name
+                        EmailHostName = "smtp.office365.com",    // Replace with your SMTP server
+                        EmailPort = 587,                       // Replace with your SMTP port
+                        EmailEnableSsl = true,
+                        EmailUsername = "jaymin.m@shaligraminfotech.com",  // Replace with your SMTP username
+                        EmailAppPassword = "ndggndqftjdljftb"     // Replace with your SMTP password
+                    };
+
+                    string subject = "Welcome to ShopEase";
+                    // Read the HTML template file
+                    string templatePath = Path.Combine(Directory.GetCurrentDirectory(), "EmailTemplate", "CreateNewAdminUser.html");
+                    string emailBody = await File.ReadAllTextAsync(templatePath);
+
+                    // Replace placeholders in the template with actual values
+                    emailBody = emailBody.Replace("{{UserName}}", model.UserName);
+                    //string body = $"Dear {model.UserName},<br/>Welcome to ShopEase! We're glad to have you.";
+
+                    bool emailSent = EmailNotification.SendMailMessage(
+                        recipient: model.UserEmail,
+                        bcc: null,
+                        cc: null,
+                        subject: subject,
+                        body: emailBody,
+                        emailSetting: emailSetting,
+                        attachment: null
+                    );
+
+                    if (!emailSent)
+                    {
+                        response.Message = "User registered, but there was an issue sending the welcome email.";
+                    }
                 };
             }
             catch (Exception ex)
