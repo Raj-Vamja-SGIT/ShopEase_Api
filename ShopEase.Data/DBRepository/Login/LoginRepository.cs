@@ -7,14 +7,21 @@ using Dapper;
 using ShopEase.Common.Helpers;
 using System.Reflection;
 using ShopEase.Common.EmailNotification;
+using ShopEase.Model.Settings;
+using static ShopEase.Common.EmailNotification.EmailNotification;
+using ShopEase.Model.ViewModels.User;
 
 namespace ShopEase.Data.DBRepository.Account
 {
     public class LoginRepository : BaseRepository, ILoginRepository
     {
+        private readonly SMTPSettings _smtpSettings;
+
         #region Constructor
-        public LoginRepository(IOptions<DataConfig> dataConfig) : base(dataConfig)
+        public LoginRepository(IOptions<DataConfig> dataConfig, IOptions<SMTPSettings> smtpSettings) : base(dataConfig)
         {
+            _smtpSettings = smtpSettings.Value;
+
         }
         #endregion
 
@@ -48,17 +55,18 @@ namespace ShopEase.Data.DBRepository.Account
                     response.Success = true;
                     response.Message = "User registered successfully";
 
-                    // Send welcome email after successful registration
-                    var emailSetting = new EmailNotification.EmailSetting
+                    
+                    EmailSetting setting = new()
                     {
-                        FromEmail = "jaymin.m@shaligraminfotech.com",   // Replace with your sender email
-                        FromName = "ShopEase",                 // Replace with the sender name
-                        EmailHostName = "smtp.office365.com",    // Replace with your SMTP server
-                        EmailPort = 587,                       // Replace with your SMTP port
-                        EmailEnableSsl = true,
-                        EmailUsername = "jaymin.m@shaligraminfotech.com",  // Replace with your SMTP username
-                        EmailAppPassword = "ndggndqftjdljftb"     // Replace with your SMTP password
+                        EmailEnableSsl = Convert.ToBoolean(_smtpSettings.EmailEnableSsl),
+                        EmailHostName = _smtpSettings.EmailHostName,
+                        EmailAppPassword = _smtpSettings.EmailAppPassword,
+                        EmailPort = Convert.ToInt32(_smtpSettings.EmailPort),
+                        FromEmail = _smtpSettings.FromEmail,
+                        FromName = _smtpSettings.FromName,
+                        EmailUsername = _smtpSettings.EmailUsername
                     };
+
 
                     string subject = "Welcome to ShopEase";
                     // Read the HTML template file
@@ -75,7 +83,7 @@ namespace ShopEase.Data.DBRepository.Account
                         cc: null,
                         subject: subject,
                         body: emailBody,
-                        emailSetting: emailSetting,
+                        emailSetting: setting,
                         attachment: null
                     );
 
@@ -94,5 +102,30 @@ namespace ShopEase.Data.DBRepository.Account
             return response;
         }
         #endregion
+
+        public async Task<UsersModel> GetUserByEmailAsync(string email)
+        {
+            try
+            {
+                var param = new DynamicParameters();
+                param.Add("@UserEmail", email);
+
+                // Call the stored procedure with the dynamic parameters
+                var result = await QueryFirstOrDefaultAsync<UsersModel>(
+                    "sp_GetUserEmail",
+                    param,
+                    commandType: CommandType.StoredProcedure
+                );
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                // Handle exception, log if needed
+                throw new Exception($"Error fetching user by email: {ex.Message}");
+            }
+        }
+
+
     }
 }
