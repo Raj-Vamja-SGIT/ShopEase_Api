@@ -35,6 +35,7 @@ builder.Services.AddSingleton<ILoggerManager, LoggerManager>();
 
 // Application Setting & SMTP Settings Configuration read from appsettings.json
 builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
+builder.Services.Configure<SMTPSettings>(builder.Configuration.GetSection("SMTPSettings"));
 
 // JWT Token Configuration
 var key = Encoding.UTF8.GetBytes(Convert.ToString(builder.Configuration["AppSettings:JWT_Secret"]));

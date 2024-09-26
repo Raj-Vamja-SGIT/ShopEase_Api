@@ -115,7 +115,10 @@ namespace ShopEase.Common.EmailNotification
                 DisposeOf(smtpClient);
             }
         }
-
+        public static async Task<bool> SendAsyncEmail(string recipient, string bcc, string cc, string subject, string body, EmailSetting emailSetting, string attachment)
+        {
+            return await Task.Run(() => SendMailMessage(recipient, bcc, cc, subject, body, emailSetting, attachment));
+        }
         //public static int ConvertImageToPDF(byte[] imageBytes, string savepdfGeneratePath)
         //{
         //    using (var ms = new MemoryStream())
