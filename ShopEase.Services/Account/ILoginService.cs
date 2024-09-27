@@ -1,5 +1,6 @@
 ﻿using ShopEase.Common.Helpers;
-using ShopEase.Model.ViewModels.Login; 
+using ShopEase.Model.ViewModels.Login;
+using ShopEase.Model.ViewModels.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,8 @@ namespace ShopEase.Service.Services.Account
         Task<BaseApiResponse> RegisterUser(RegisterUserRequestModel model);
         #endregion
 
+
+        Task<BaseApiResponse> ForgotPassword(ForgotPasswordRequestModel model);
 
     }
 }

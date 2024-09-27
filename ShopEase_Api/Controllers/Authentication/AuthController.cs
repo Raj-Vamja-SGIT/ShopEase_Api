@@ -9,6 +9,8 @@ using ShopEase.Model.ViewModels.Token;
 using ShopEase.Service.Services.JWTAuthentication;
 using ShopEase.Service.Services.Account;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ShopEase_Api.Controllers.Authentication
 {
@@ -21,6 +23,8 @@ namespace ShopEase_Api.Controllers.Authentication
         private ILoginService _accountService;
         private readonly AppSettings _appSettings;
         private readonly IJWTAuthenticationService _jwtAuthenticationService;
+     
+        private readonly IConfiguration _config;
         #endregion
 
         #region Constructor
@@ -119,10 +123,13 @@ namespace ShopEase_Api.Controllers.Authentication
             }
         }
 
-
+        [HttpPost("ForgotPassword")]
+        public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordRequestModel model)
+        {
+            var result = await _accountService.ForgotPassword(model);
+            return Ok(result);
+        }
     }
     #endregion
-
-
 
 }
