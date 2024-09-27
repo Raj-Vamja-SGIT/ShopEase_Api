@@ -26,6 +26,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Documents\User\Thumbnail\0aba6c68-f3ed-4d43-a7b1-c7381902887a_naruto_illustration.jpg" />
+    <None Include="wwwroot\Documents\User\Thumbnail\34635275-e937-44b6-a6a2-528b4cfa7c6e_naruto_illustration.jpg" />
+    <None Include="wwwroot\Documents\User\Thumbnail\8791c5af-e4db-4d52-a354-dabf3bcff1e8_naruto_illustration.jpg" />
+    <None Include="wwwroot\Documents\User\Thumbnail\a6492b77-01b0-4264-8bb4-9c4b92015525_naruto_illustration.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ShopEase.Model\ShopEase.Model.csproj" />
     <ProjectReference Include="..\ShopEase.Services\ShopEase.Services.csproj" />
   </ItemGroup>

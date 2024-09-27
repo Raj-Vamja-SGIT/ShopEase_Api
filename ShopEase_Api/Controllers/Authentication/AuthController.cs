@@ -78,12 +78,12 @@ namespace ShopEase_Api.Controllers.Authentication
                 loginBaseReponseModel.UserProfile = UserProfile;
 
                 response.Success = true;
-                response.Message = ErrorMessages.LoginSuccess;
+                response.Message = Messages.LoginSuccess;
             }
             else
             {
                 response.Success = false;
-                response.Message = ErrorMessages.LoginError;
+                response.Message = Messages.LoginError;
             }
             response.Data = loginBaseReponseModel;
             return response;
