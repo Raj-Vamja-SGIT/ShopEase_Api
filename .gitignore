@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ShopEase_Api/FileContentIndex/2cf9e956-6951-444b-a762-9b165b7c97e8.vsidx
+/.vs/ShopEase_Api/FileContentIndex/2cf9e956-6951-444b-a762-9b165b7c97e8.vsidx
+/.vs/ShopEase_Api/DesignTimeBuild
+/.vs/ShopEase_Api/FileContentIndex
+/.vs/ShopEase_Api/v17
+/.vs
+/ShopEase_Api/.vs/ShopEase_Api/FileContentIndex
+/ShopEase_Api/bin/Debug/net8.0
+/ShopEase_Api/obj
