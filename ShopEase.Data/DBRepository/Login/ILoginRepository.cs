@@ -12,8 +12,8 @@ namespace ShopEase.Data.DBRepository.Account
     {
         #region Post
         Task<LoginResponseModel> LoginUser(LoginRequestModel model); 
+        Task<BaseApiResponse> RegisterUser(RegisterUserRequestModel model);
         #endregion
 
-        Task<BaseApiResponse> RegisterUser(RegisterUserRequestModel model);
     }
 }

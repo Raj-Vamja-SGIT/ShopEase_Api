@@ -1,4 +1,5 @@
 ﻿using ShopEase.Data.DBRepository.Account;
+using ShopEase.Data.DBRepository.UserProfile;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,8 @@ namespace ShopEase.Data
         {
             var dataDictionary = new Dictionary<Type, Type>
             {
-                { typeof(ILoginRepository), typeof(LoginRepository) }
+                { typeof(ILoginRepository), typeof(LoginRepository) },
+                { typeof(IUserProfileRepository), typeof(UserProfileRepository) },
             };
             return dataDictionary;
         }

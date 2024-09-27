@@ -108,6 +108,10 @@ builder.Services.AddSwaggerGen(option =>
 builder.Services.AddControllers();
 var app = builder.Build();
 
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+
 app.UseRequestLocalization();
 app.UseCors("AllRequests");
 app.UseRouting();
@@ -124,9 +128,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
-app.UseStaticFiles();
 
-app.UseHttpsRedirection();
 
 app.MapControllers();
 
