@@ -14,10 +14,9 @@ namespace ShopEase.Service.Services.Account
         #region Post
         Task<LoginResponseModel> LoginUser(LoginRequestModel model);
         Task<BaseApiResponse> RegisterUser(RegisterUserRequestModel model);
-        #endregion
-
-
         Task<BaseApiResponse> ForgotPassword(ForgotPasswordRequestModel model);
+        Task<BaseApiResponse> ChangeUserPassword(UsersModel user);
+        #endregion
 
     }
 }

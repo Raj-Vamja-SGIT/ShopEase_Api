@@ -33,11 +33,7 @@ namespace ShopEase.Data.DBRepository.Account
             param.Add("@Password", model.Password);
             return await QueryFirstOrDefaultAsync<LoginResponseModel>("LoginUser", param, commandType: CommandType.StoredProcedure);
         }
-        #endregion
 
-
-
-        #region Post
         public async Task<BaseApiResponse> RegisterUser(RegisterUserRequestModel model)
         {
             BaseApiResponse response= new BaseApiResponse();
@@ -101,8 +97,39 @@ namespace ShopEase.Data.DBRepository.Account
             }
             return response;
         }
+
+        public async Task<BaseApiResponse> ChangeUserPassword(UsersModel user)
+        {
+            BaseApiResponse response = new BaseApiResponse();
+            try
+            {
+                var param = new DynamicParameters();
+                param.Add("@UserEmail", user.UserEmail);
+                param.Add("@Password", user.Password);
+                var result = await QueryFirstOrDefaultAsync<int>("sp_ChangeUserPassword", param, commandType: CommandType.StoredProcedure);
+
+                if (result != null && result > 0)
+                {
+                    response.Success = true;
+                    response.Message = Messages.ChangePasswordSuccess;
+                }
+                else
+                {
+                    response.Success = false;
+                    response.Message = Messages.ChangePasswordError;
+                }
+            }
+            catch (Exception ex)
+            {
+                response.Success = false;
+                response.Message = ex.Message;
+            }
+            return response;
+        }
+
         #endregion
 
+        #region Get
         public async Task<UsersModel> GetUserByEmailAsync(string email)
         {
             try
@@ -125,7 +152,6 @@ namespace ShopEase.Data.DBRepository.Account
                 throw new Exception($"Error fetching user by email: {ex.Message}");
             }
         }
-
-
+        #endregion
     }
 }

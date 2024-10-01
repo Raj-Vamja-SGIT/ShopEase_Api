@@ -11,9 +11,10 @@ namespace ShopEase.Model.Settings
         public string? JWT_Secret { get; set; }
         public int JWT_Validity_Mins { get; set; }
         public int PasswordLinkValidityMins { get; set; }
+        public string GoogleClientId { get; set; }
         public string? AESDecryptionKey { get; set; }
         public string? AESIVKey { get; set; }
-        public string? APIURL { get; set; }
+        public string? APIURL { get; set; } 
         public string? FrontPortalURL { get; set; }
         public string? AdminPortalURL { get; set; }
         public int ForgotPasswordAttemptValidityMin { get; set; }

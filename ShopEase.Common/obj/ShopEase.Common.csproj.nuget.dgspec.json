@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Common\\ShopEase.Common.csproj": {}
+    "C:\\Projects\\_ShopEase\\ShopEase_Api\\ShopEase.Common\\ShopEase.Common.csproj": {}
   },
   "projects": {
-    "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Common\\ShopEase.Common.csproj": {
+    "C:\\Projects\\_ShopEase\\ShopEase_Api\\ShopEase.Common\\ShopEase.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Common\\ShopEase.Common.csproj",
+        "projectUniqueName": "C:\\Projects\\_ShopEase\\ShopEase_Api\\ShopEase.Common\\ShopEase.Common.csproj",
         "projectName": "ShopEase.Common",
-        "projectPath": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Common\\ShopEase.Common.csproj",
-        "packagesPath": "C:\\Users\\sit120\\.nuget\\packages\\",
-        "outputPath": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Common\\obj\\",
+        "projectPath": "C:\\Projects\\_ShopEase\\ShopEase_Api\\ShopEase.Common\\ShopEase.Common.csproj",
+        "packagesPath": "C:\\Users\\sit327.SIT\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\_ShopEase\\ShopEase_Api\\ShopEase.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sit120\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sit327.SIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Model\\ShopEase.Model.csproj": {
-                "projectPath": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Model\\ShopEase.Model.csproj"
+              "C:\\Projects\\_ShopEase\\ShopEase_Api\\ShopEase.Model\\ShopEase.Model.csproj": {
+                "projectPath": "C:\\Projects\\_ShopEase\\ShopEase_Api\\ShopEase.Model\\ShopEase.Model.csproj"
               }
             }
           }
@@ -54,6 +54,10 @@
               "version": "[2.1.35, )"
             },
             "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
               "target": "Package",
               "version": "[2.2.0, )"
             },
@@ -90,21 +94,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Model\\ShopEase.Model.csproj": {
+    "C:\\Projects\\_ShopEase\\ShopEase_Api\\ShopEase.Model\\ShopEase.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Model\\ShopEase.Model.csproj",
+        "projectUniqueName": "C:\\Projects\\_ShopEase\\ShopEase_Api\\ShopEase.Model\\ShopEase.Model.csproj",
         "projectName": "ShopEase.Model",
-        "projectPath": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Model\\ShopEase.Model.csproj",
-        "packagesPath": "C:\\Users\\sit120\\.nuget\\packages\\",
-        "outputPath": "C:\\Jaimin\\ShopEase\\ShopEaseApi\\ShopEase.Model\\obj\\",
+        "projectPath": "C:\\Projects\\_ShopEase\\ShopEase_Api\\ShopEase.Model\\ShopEase.Model.csproj",
+        "packagesPath": "C:\\Users\\sit327.SIT\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\_ShopEase\\ShopEase_Api\\ShopEase.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sit120\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sit327.SIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -139,6 +143,14 @@
               "target": "Package",
               "version": "[2.1.35, )"
             },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.2, )"
@@ -164,7 +176,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

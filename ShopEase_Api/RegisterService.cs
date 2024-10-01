@@ -1,4 +1,6 @@
 ﻿using ShopEase.Data;
+using ShopEase.Data.DBRepository.Account;
+using ShopEase.Data.DBRepository.UserProfile;
 using ShopEase.Logger;
 using ShopEase.Service;
 using ShopEase.Service.Services.JWTAuthentication;
@@ -13,6 +15,7 @@ namespace ShopEase_Api
             Configure(services, DataRegister.GetTypes());
             Configure(services, ServiceRegister.GetTypes());
         }
+
 
         private static void Configure(IServiceCollection services, Dictionary<Type, Type> types)
         {
