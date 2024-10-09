@@ -20,6 +20,14 @@ namespace ShopEase.Common.Helpers
         public const string GetUserProfileError = "There is an error occured while fetching user profile details.";
         public const string UpdateUserProfileSuccess = "User profile updated successfully.";
         public const string UpdateUserProfileError = "There is an error occured while updating an user profile!";
+        public const string GetUsersSuccess = "Fetch users successfully";
+        public const string AddUserSuccess = "User added successfully";
+        public const string AddUserError = "There is an error occured while adding the user!";
+        public const string UserExist = "User alredy exist with given email, Please try with another email.";
+        public const string UpdateUserSuccess = "User updated successfully";
+        public const string DeleteUserSuccess = "User deleted successfully";
+        public const string DeleteMultiUserSuccess = "Selected users deleted successfully";
+        public const string DeleteUserError = "There is an error occured while deleting the user";
 
         //Login
         public const string LoginSuccess = "Logged in successfully";
@@ -28,10 +36,13 @@ namespace ShopEase.Common.Helpers
 
         //Reset Passwors
         public const string ResetPasswordMailSuccess = "Reset password mail send successfully to your register email.";
-        public const string UserNotFound = "There is no user found with procided email.";
+        public const string UserNotFound = "There is no user found with procided data.";
         public const string ChangePasswordSuccess = "User's password change successfully";
         public const string ChangePasswordError = "There is an error occured while update an user password!";
 
+        //Dashboard
+        public const string DashbodrdDataSuccess = "Fetch dashboard data sccessfully";
+        public const string DashbodrdDataError = "There is an error while fetching the dashboard data!";
 
     }
 }

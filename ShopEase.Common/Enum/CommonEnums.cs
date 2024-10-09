@@ -8,8 +8,9 @@ namespace ShopEase.Common.Enum
 {
     public enum Roles
     {
-        Administrator = 1,
-        Customer = 2
+        SuperAdministrator = 1,
+        Administrator = 2,
+        Customer = 3
     }
 
 }

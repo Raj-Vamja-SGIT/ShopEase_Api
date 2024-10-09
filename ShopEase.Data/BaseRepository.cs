@@ -34,8 +34,8 @@ namespace ShopEase.Data
 
         public async Task<IEnumerable<T>> QueryAsync<T>(string sql, object param = null, IDbTransaction transaction = null, int? commandTimeout = null, CommandType? commandType = null)
         {
-            string decryptedConn = EncryptionDecryption.GetDecrypt(_connectionString.Value.DefaultConnection);
-            using (SqlConnection con = new SqlConnection(decryptedConn))
+            //string decryptedConn = EncryptionDecryption.GetDecrypt(_connectionString.Value.DefaultConnection);
+            using (SqlConnection con = new SqlConnection(_connectionString.Value.DefaultConnection))
             {
                 await con.OpenAsync();
                 return await con.QueryAsync<T>(sql, param, commandType: CommandType.StoredProcedure);

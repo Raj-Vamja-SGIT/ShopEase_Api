@@ -264,6 +264,16 @@ namespace ShopEase_Api.Controllers.Authentication
         {
             try
             {
+                var chekUser = await _loginRepo.GetUserByEmailAsync(model.UserEmail);
+                if (chekUser != null)
+                {
+                    return new ApiPostResponse<BaseApiResponse>
+                    {
+                        Success = false,
+                        Message = Messages.UserExist,
+                    };
+                }
+
                 if (!ModelState.IsValid)
                 {
                     return new ApiPostResponse<BaseApiResponse>
