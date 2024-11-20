@@ -11,13 +11,15 @@ namespace ShopEase.Data.DBRepository.Account
 {
     public interface ILoginRepository
     {
-        #region Post
-        Task<LoginResponseModel> LoginUser(LoginRequestModel model); 
-        Task<BaseApiResponse> RegisterUser(RegisterUserRequestModel model);
+        #region Get
+        Task<UsersModel> GetUserByEmailAsync(string email);
         #endregion
 
+        #region Post
+        Task<LoginResponseModel> LoginUser(LoginRequestModel model);
         Task<BaseApiResponse> RegisterUser(RegisterUserRequestModel model);
-        Task<UsersModel> GetUserByEmailAsync(string email);
+        Task<BaseApiResponse> ChangeUserPassword(UsersModel user);
+        #endregion
 
     }
 }

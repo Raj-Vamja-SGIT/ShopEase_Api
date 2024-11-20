@@ -18,7 +18,7 @@ namespace ShopEase.Common.Helpers
     }
     public class ApiPostResponse<T> : BaseApiResponse
     {
-        public virtual T Data { get; set; }
+        public virtual T Data { get; set; } 
     }
     public class Response : BaseApiResponse
     {

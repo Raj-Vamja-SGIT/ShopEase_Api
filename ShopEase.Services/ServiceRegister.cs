@@ -1,5 +1,7 @@
 ﻿using ShopEase.Model.ViewModels.Login;
 using ShopEase.Service.Services.Account;
+using ShopEase.Services.Admin;
+using ShopEase.Services.Product;
 using ShopEase.Services.UserProfile;
 using System;
 using System.Collections.Generic;
@@ -13,8 +15,9 @@ namespace ShopEase.Service
             var serviceDictonary = new Dictionary<Type, Type>
             {
                 { typeof(ILoginService), typeof(LoginService) },
-                { typeof(IUserProfileService), typeof(UserProfileService) }
-
+                { typeof(IUserProfileService), typeof(UserProfileService) },
+                { typeof(IAdminService), typeof(AdminService) },
+                { typeof(IProductService), typeof(ProductService) }
             };
             return serviceDictonary;
         }

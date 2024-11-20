@@ -19,6 +19,7 @@ namespace ShopEase.Data.DBRepository.UserProfile
         public UserProfileRepository(IOptions<DataConfig> dataConfig) : base(dataConfig)
         {
         }
+
         #endregion
 
         #region Get
@@ -78,4 +79,3 @@ namespace ShopEase.Data.DBRepository.UserProfile
         #endregion
     }
 }
-    
