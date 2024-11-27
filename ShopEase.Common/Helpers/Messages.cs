@@ -45,10 +45,17 @@ namespace ShopEase.Common.Helpers
         public const string DashbodrdDataError = "There is an error while fetching the dashboard data!";
 
         //Product
-        public const string AddProductSuccess = "Product added successfully";
+        public const string AddProductSuccess = "Product saved successfully";
         public const string AddProductError = "There is an error occured while adding the product.";
         public const string UpdateProductSuccess = "Product updated successfully";
         public const string UpdateProductError = "There is an error occured while updating the product.";
         public const string GetProductsSuccess = "Fetch products successfully.";
+        public const string GetCategoriesSuccess = "Fetch categories successfully.";
+        public const string GetBrandsSuccess = "Fetch brands successfully.";
+        public const string GetProductSuccess = "Fetch product details successfully.";
+        public const string AddProductImageSuccess = "Product image added successfully";
+        public const string AddProductImageError = "There is an error occured while adding the product image.";
+        public const string DeleteProductImageSuccess = "Product image deleted successfully.";
+        public const string DeleteProductImageError = "There is an error occured while deleting the product image.";
     }
 }

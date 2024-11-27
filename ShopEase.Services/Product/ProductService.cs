@@ -1,4 +1,5 @@
-﻿using ShopEase.Common.Helpers;
+﻿using ShopEase.Common.Enum;
+using ShopEase.Common.Helpers;
 using ShopEase.Data.DBRepository.Product;
 using ShopEase.Model.ViewModels.Product;
 using System;
@@ -23,16 +24,48 @@ namespace ShopEase.Services.Product
         #endregion
 
         #region Post
-        public async Task<BaseApiResponse> AddProduct(ProductModel product)
+        public async Task<BaseApiResponse> AddUpdateProduct(ProductModel product)
         {
-           return await _productRepository.AddProduct(product); 
+           return await _productRepository.AddUpdateProduct(product); 
         }
+        public async Task<BaseApiResponse> AddProductImages(ProductImageModel productImages)
+        {
+            return await _productRepository.AddProductImages(productImages);
+        }
+
+        public async Task<BaseApiResponse> DeleteProductImage(long imageId)
+        {
+            return await _productRepository.DeleteProductImage(imageId);
+        }
+
         #endregion
+
         #region Get
-        public async Task<List<ProductModel>> GetProductList(int roleId)
+        public async Task<List<ProductModel>> GetProductList(int Id, string searchTerm = null)
         {
-            return await _productRepository.GetProductList(roleId);
+            return await _productRepository.GetProductList(Id, searchTerm);
         }
+
+        public async Task<List<BrandModel>> GetBrandList(int categoryId)
+        {
+            return await _productRepository.GetBrandList(categoryId);
+        }
+
+        public async Task<List<CategoryModel>> GetCategoryList()
+        {
+            return await _productRepository.GetCategoryList();
+        }
+
+        public async Task<ProductModel> GetProductDetaiById(int productId)
+        {
+            return await _productRepository.GetProductDetaiById(productId);
+        }
+
+        public async Task<List<ProductImageViewModel>> GetProductImages(int productId)
+        {
+            return await _productRepository.GetProductImages(productId);
+        }
+
         #endregion
     }
 }

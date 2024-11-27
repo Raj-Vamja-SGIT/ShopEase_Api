@@ -9,10 +9,17 @@ namespace ShopEase.Model.ViewModels.Product
 {
     public class ProductImageModel
     {
+        public long ProductId { get; set; }
+
+        public List<IFormFile>? ImageFiles { get; set; }
+        public List<string>? ImageUrls { get; set; }
+    }
+
+    public class ProductImageViewModel
+    {
         public long ImageId { get; set; }
         public long ProductId { get; set; }
-        public string? ImageURL { get; set; }
-        public bool IsPrimary { get; set; }
-        public DateTime CreatedDate { get; set; }
+
+        public string? ImageUrls { get; set; }
     }
 }
