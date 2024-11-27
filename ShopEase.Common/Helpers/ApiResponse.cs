@@ -11,6 +11,8 @@ namespace ShopEase.Common.Helpers
 
         public bool Success { get; set; }
         public string Message { get; set; }
+        public long TAID { get; set; }
+
     }
     public class ApiResponse<T> : BaseApiResponse
     {
