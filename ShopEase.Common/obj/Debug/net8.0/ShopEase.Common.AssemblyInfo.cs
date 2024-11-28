@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShopEase.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d54389bf4d8fcf9c6e00e00fdf0cb2f07fa4832f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+449770b4347be0fdc6246be230187fe2a0f63b2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShopEase.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShopEase.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

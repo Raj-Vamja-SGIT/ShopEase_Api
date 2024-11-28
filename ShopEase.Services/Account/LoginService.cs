@@ -9,6 +9,7 @@ using ShopEase.Model.ViewModels.Login;
 using ShopEase.Model.ViewModels.User;
 using static ShopEase.Common.EmailNotification.EmailNotification;
 using System.Security.Cryptography;
+using ShopEase.Common.Helpers;
 
 namespace ShopEase.Service.Services.Account
 {
@@ -34,8 +35,7 @@ namespace ShopEase.Service.Services.Account
         public async Task<LoginResponseModel> LoginUser(LoginRequestModel model)
         {
             return await _repository.LoginUser(model);
-        } 
-        #endregion
+        }
 
         public async Task<BaseApiResponse> RegisterUser(RegisterUserRequestModel model)
         {
@@ -89,7 +89,6 @@ namespace ShopEase.Service.Services.Account
 
         public async Task<BaseApiResponse> ForgotPassword(ForgotPasswordRequestModel model)
         {
-            // Now call the repository method which accepts the parameters
             var user = await _repository.GetUserByEmailAsync(model.Email);
             if (user != null)
             {
@@ -100,11 +99,11 @@ namespace ShopEase.Service.Services.Account
                 var callback = (model.ClientURL + "?token=" + timeStampedToken + "&email=" + model.Email);
                 SendEmailOnForgotPassword(model.Email, callback);
 
-                return new BaseApiResponse { Success = true, Message = "Forgot Password Mail Sent Successfull" };
+                return new BaseApiResponse { Success = true, Message = Messages.ResetPasswordMailSuccess };
             }
             else
             {
-                return new BaseApiResponse { Success = false, Message = "User Not Found" };
+                return new BaseApiResponse { Success = false, Message = Messages.UserNotFound };
             }
         }
 
@@ -123,7 +122,11 @@ namespace ShopEase.Service.Services.Account
             }
         }
 
+        public async Task<BaseApiResponse> ChangeUserPassword(UsersModel user)
+        {
+            return await _repository.ChangeUserPassword(user);
+        }
 
-
+        #endregion
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopEase.Model.ViewModels.User;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,12 @@ namespace ShopEase.Model.ViewModels.Login
     public class LoginBaseReponseModel
     {        
         public UserProfileModel? UserProfile { get; set; }
+        public AccessTokenResponseModel? AccessToken { get; set; }
+    }
+
+    public class LoginWithGoogleBaseReponseModel
+    {
+        public UsersModel? UserProfile { get; set; }
         public AccessTokenResponseModel? AccessToken { get; set; }
     }
 

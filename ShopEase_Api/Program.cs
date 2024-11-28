@@ -24,7 +24,8 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllRequests", builder =>
     {
-        builder.AllowAnyHeader()
+        builder.WithOrigins("http://localhost:4200")
+        .AllowAnyHeader()
         .AllowAnyMethod()
         .AllowAnyOrigin();
     });
@@ -109,6 +110,10 @@ builder.Services.AddSwaggerGen(option =>
 builder.Services.AddControllers();
 var app = builder.Build();
 
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+
 app.UseRequestLocalization();
 app.UseCors("AllRequests");
 app.UseRouting();
@@ -125,9 +130,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
-app.UseStaticFiles();
 
-app.UseHttpsRedirection();
 
 app.MapControllers();
 

@@ -1,4 +1,7 @@
 ﻿using ShopEase.Data.DBRepository.Account;
+using ShopEase.Data.DBRepository.Admin;
+using ShopEase.Data.DBRepository.Product;
+using ShopEase.Data.DBRepository.UserProfile;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +16,10 @@ namespace ShopEase.Data
         {
             var dataDictionary = new Dictionary<Type, Type>
             {
-                { typeof(ILoginRepository), typeof(LoginRepository) }
+                { typeof(ILoginRepository), typeof(LoginRepository) },
+                { typeof(IUserProfileRepository), typeof(UserProfileRepository) },
+                { typeof(IAdminRepository), typeof(AdminRepository) },
+                { typeof(IProductRepository), typeof(ProductRepository) },
             };
             return dataDictionary;
         }
