@@ -38,6 +38,11 @@ namespace ShopEase.Services.Product
             return await _productRepository.DeleteProductImage(imageId);
         }
 
+        public async Task<BaseApiResponse> UpdateImageOrder(string updatedOrdre)
+        {
+            return await _productRepository.UpdateImageOrder(updatedOrdre);
+        }
+
         #endregion
 
         #region Get

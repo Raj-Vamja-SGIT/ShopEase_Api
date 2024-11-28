@@ -15,6 +15,8 @@ namespace ShopEase.Data.DBRepository.Product
         Task<BaseApiResponse> AddUpdateProduct(ProductModel product);
         Task<BaseApiResponse> AddProductImages(ProductImageModel productImages);
         Task<BaseApiResponse> DeleteProductImage(long imageId);
+        Task<BaseApiResponse> UpdateImageOrder(string updatedOrdre);
+
 
         #endregion
         #region Get

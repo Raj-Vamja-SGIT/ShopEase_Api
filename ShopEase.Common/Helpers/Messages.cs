@@ -57,5 +57,8 @@ namespace ShopEase.Common.Helpers
         public const string AddProductImageError = "There is an error occured while adding the product image.";
         public const string DeleteProductImageSuccess = "Product image deleted successfully.";
         public const string DeleteProductImageError = "There is an error occured while deleting the product image.";
+        public const string NoDataForUpdateOrder = "There is no data provided for update image ordering.";
+        public const string UpdateImageOrderSuccess = "Image orderig updated successfully.";
+        public const string UpdateImageOrderError = "There is an error occures while update image orderig!";
     }
 }
