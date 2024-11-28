@@ -119,6 +119,35 @@ namespace ShopEase.Data.DBRepository.Product
             return response;
         }
 
+        public async Task<BaseApiResponse> UpdateImageOrder(string updatedOrdre)
+        {
+            BaseApiResponse response = new BaseApiResponse();
+
+            try
+            {
+                var param = new DynamicParameters();
+                param.Add("@ImageOrderUpdates", updatedOrdre);
+                var result = await QueryFirstOrDefaultAsync<int>("sp_UpdateProductImageOrder", param, commandType: CommandType.StoredProcedure);
+
+                if (result != null && result > 0)
+                {
+                    response.Success = true;
+                    response.Message = Messages.UpdateImageOrderSuccess;
+                }
+                else
+                {
+                    response.Success = false;
+                    response.Message = Messages.UpdateImageOrderError;
+                }
+            }
+            catch (Exception ex)
+            {
+                response.Success = false;
+                response.Message = ex.Message;
+            }
+            return response;
+        }
+
         #endregion
         #region Get
         public async Task<List<ProductModel>> GetProductList(int Id, string searchTerm = null)
@@ -151,7 +180,7 @@ namespace ShopEase.Data.DBRepository.Product
             {
                 var param = new DynamicParameters();
                 param.Add("@CategoryId", categoryId);
-                var brandList = await QueryAsync<BrandModel>("sp_GetBrandList", param,commandType: CommandType.StoredProcedure);
+                var brandList = await QueryAsync<BrandModel>("sp_GetBrandList", param, commandType: CommandType.StoredProcedure);
 
                 if (brandList != null && brandList.Any())
                 {

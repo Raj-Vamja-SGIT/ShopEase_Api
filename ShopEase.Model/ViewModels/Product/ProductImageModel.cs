@@ -21,5 +21,14 @@ namespace ShopEase.Model.ViewModels.Product
         public long ProductId { get; set; }
 
         public string? ImageUrls { get; set; }
+        public long ImageOrderNumber { get; set; }
+
     }
+
+    public class ImageOrderUpdateRequestModel
+    {
+        public string ImageId { get; set; }
+        public string ImageOrderNumber { get; set; }
+    }
+
 }

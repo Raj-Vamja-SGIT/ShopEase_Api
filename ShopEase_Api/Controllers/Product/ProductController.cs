@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using ShopEase.Common.Helpers;
 using ShopEase.Model.ViewModels.Product;
 using ShopEase.Model.ViewModels.User;
@@ -272,6 +273,37 @@ namespace ShopEase_Api.Controllers.Product
                 };
             }
         }
+
+        [HttpPost("UpdateImageOrder")]
+        public async Task<BaseApiResponse> UpdateImageOrder([FromForm] string updatedOrder)
+        {
+            try
+            {
+                if (updatedOrder == null )
+                {
+                    return new ApiResponse<BaseApiResponse>
+                    {
+                        Success = false,
+                        Message = Messages.NoDataForUpdateOrder
+                    };
+                }
+
+                var imageOrderList = JsonConvert.DeserializeObject<List<ImageOrderUpdateRequestModel>>(updatedOrder);
+                var commaSeparatedImageOrdering = string.Join(";", imageOrderList.Select(item => $"{item.ImageId},{item.ImageOrderNumber}"));
+
+                var result = await _productService.UpdateImageOrder(commaSeparatedImageOrdering);
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return new ApiResponse<BaseApiResponse>
+                {
+                    Success = false,
+                    Message = ex.Message
+                };
+            }
+        }
+
         #endregion
     }
 }
